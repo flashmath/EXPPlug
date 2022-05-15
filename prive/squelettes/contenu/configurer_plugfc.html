@@ -1,0 +1,17 @@
+[(#AUTORISER{configurer,plugfc}|sinon_interdire_acces))]
+
+<h1 class="grostitre"><:plugfc:expplug_title:></h1>
+
+<h4 class="version"><:plugfc:version_actuelle:> #PLUGIN{plugfc, version}</h4>
+
+[(#ENV{cfg, accueil}|=={accueil}|oui)
+#BOITE_OUVRIR{#CHEMIN_IMAGE{escal-xx.svg}|balise_img{'',cadre-icone}, info}
+
+<:plugfc:texte_accueil:>
+
+#BOITE_FERMER
+
+]
+
+[(#SET{configurer, [(#ENV{type-page})_[(#ENV{cfg, accueil})]]})]
+    [<div class='ajax'>(#FORMULAIRE_{#GET{configurer}})</div>]

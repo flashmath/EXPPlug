@@ -1,0 +1,21 @@
+<paquet
+    prefix="plugfc"
+    categorie="squelette"
+    version="0.2.5"
+    schema="1.0.0"
+    etat="dev"
+    logo="prive/spip/images/logo-128.png"
+    compatibilite="[3.2.0;4.1.*]"
+>
+    <nom>ExpPlug</nom>
+
+    <auteur>Fabrice Charlemagne</auteur>
+
+    <necessite nom="saisies" compatibilite="[3.55.3;[" />
+    <necessite nom="verifier" compatibilite="[2.1.2;[" />
+
+    <menu nom="expplug" titre="Configurer ExpPlug" parent="menu_squelette" action="configurer_plugfc" />
+
+    <pipeline nom="autoriser" inclure="inc/plugfc_autoriser.php" />
+
+</paquet>

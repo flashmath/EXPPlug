@@ -1,0 +1,1 @@
+<menu nom="expplug" titre="Configurer ExpPlug" parent="menu_configuration" action="configurer_plugfc" />
